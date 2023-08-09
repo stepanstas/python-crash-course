@@ -1,5 +1,4 @@
 # Store a message in a variable and then print that variable 
-
 message = "Hello World! This is a message!"
 print(message)
 
@@ -26,26 +25,22 @@ quote = first_name + " " + last_name + " once said, 'Anything the medical profes
 print(quote)
 
 # Stripping whitespace. Store a person's name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination. "\t" and "\n" at least once. 
-
 person_name = "Names:\n\tBison\n\tBison\n\tBison\n"
 print(person_name)
 
 # Print person's name once so that whitespace around the name is displayed. Then print the name using each of the htree stripping functions, lstrip(), rstrip(), and strip()
-
 person_name = " Bison     "
 print(person_name.rstrip())
 print(person_name.lstrip())
 print(person_name.strip())
 
 # Add, subtract, multiply and divide 
-
 print(2 + 3)
 print(3 - 2)
 print(2 * 3)
 print(3 / 2)
 
 # Exponents 
-
 exponent = 3 ** 2
 print(exponent)
 print(5 ** 5)
