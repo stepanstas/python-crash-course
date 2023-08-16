@@ -70,7 +70,79 @@ people.append("Cousin")
 
 for person in people:
     print(person + message)
+    
+# Use pop to remove guests from your list until only two names remain in your list. 
+removed_guest = people.pop()
+print("I am sorry" + removed_guest + " but I cannot invite you to dinner today.")
+removed_guest = people.pop()
+print("I am sorry" + removed_guest + " but I cannot invite you to dinner today.")
+removed_guest = people.pop()
+print("I am sorry" + removed_guest + " but I cannot invite you to dinner today.")
+removed_guest = people.pop()
+print("I am sorry" + removed_guest + " but I cannot invite you to dinner today.")
 
+print(people)
+
+for person in people: 
+    print(person + "," + " you're still invited to dinner!")
+    
+# Empty out the list    
+del people[1]
+print(people)
+del people[0]
+print(people)
+
+''' Think of at least five places in the world you’d like to visit.
+
+Store the locations in a list. Make sure the list is not in alphabetical order.
+Print your list in its original order. Don’t worry about printing the list neatly, just print it as a raw Python list.
+Use sorted() to print your list in alphabetical order without modifying the actual list.
+Show that your list is still in its original order by printing it.
+Use sorted() to print your list in reverse alphabetical order without changing the order of the original list.
+Show that your list is still in its original order by printing it again.
+Use reverse() to change the order of your list. Print the list to show that its order has changed.
+Use reverse() to change the order of your list again. Print the list to show it’s back to its original order.
+Use sort() to change your list so it’s stored in alphabetical order. Print the list to show that its order has been changed.
+Use sort() to change your list so it’s stored in reverse alphabetical order. Print the list to show that its order has changed. 
+
+'''
+
+locations = ['switzerland', 'colombia', 'canada', 'italy', 'spain']
+print(locations)
+print(sorted(locations))
+print(locations)
+print(sorted(locations, reverse=True))
+print(locations)
+locations.reverse()
+print(locations)
+locations.reverse()
+print(locations)
+locations.sort()
+print(locations)
+locations.sort(reverse=True)
+print(locations)
+
+# Use length to indicate the number of places you'd like to visit
+print(len(locations))
+
+'''
+Think of at least three kinds of your favorite pizza. Store these pizza names in a list, and then use a for loop to print the name of each pizza.
+
+Modify your for loop to print a sentence using the name of the pizza instead of printing just the name of the pizza. For each pizza you should have one line of output containing a simple statement like I like pepperoni pizza.
+Add a line at the end of your program, outside the for loop, that states how much you like pizza. The output should consist of three or more lines about the kinds of pizza you like and then an additional sentence, such as I really love pizza!
+
+'''
+
+pizzas = ['mushroom', 'garlic', 'cheese']
+
+for pizza in pizzas:
+    print(pizza.title())
+    print("In lowercase: " + pizza.lower())
+    print("In uppercase: " + pizza.upper())
+    
+for pizza in pizzas:
+    print(f"I like {pizza} pizza!")
+print("\nCan't you tell that I really love pizza?!")
 
 
 
