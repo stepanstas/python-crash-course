@@ -144,5 +144,53 @@ for pizza in pizzas:
     print(f"I like {pizza} pizza!")
 print("\nCan't you tell that I really love pizza?!")
 
+'''
+Think of at least three kinds of your favorite animals. Store these animals names in a list, and then use a for loop to print the name of each animal.
 
+Modify your for loop to print a sentence using the name of the animal instead of printing just the name of the animal. For each animal you should have one line of output containing a simple statement.
+Add a line at the end of your program with a statement about the animals.
+
+'''
+
+animals = ['bear', 'mountain lion', 'mooose']
+
+for animal in animals:
+    print(animal.title())
+    
+for animal in animals:
+    print(f"{animal.title()} can be a dangerous wild animal!")
+print("\nAll of these animals are fascinating if you're lucky to ever encounter them in the wild")
+
+# Use a for loop to print the numbers from 1 to 20, inclusive.
+for number in range(1,21):
+    print(number)
+    
+# Make a list of the numbers from one to one million, and then use min() and max() to make sure your list actually starts at one and ends at one million. Also, use the sum() function to see how quickly Python can add a million numbers.
+
+numbers = list(range(1, 1000001))
+
+print(min(numbers))
+print(max(numbers))
+print(sum(numbers))
+
+# Odd numbers. Make a list of odd numbers from 1 to 20. Use a for loop to print each odd number.
+numbers = list(range(1,21,2))
+for number in numbers:
+    print(number)
+
+# Threes. Make a list of multiples from 3 to 30. Use a for loop to print the numbers in your list. 
+numbers = list(range(3,31,3))
+for number in numbers:
+    print(number)
+    
+# Make a list of first ten cubes and use a for loop to print out the value of each cube.
+cubes = []
+for number in range(1,11):
+    cube = number**3
+    cubes.append(cube)
+print(cubes)
+
+# Use a list comprehension to generate a list of the first 10 cubes.
+cubes = [number**3 for number in range(1,11)]
+print(cubes)
 
