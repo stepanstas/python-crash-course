@@ -92,7 +92,7 @@ print(people)
 del people[0]
 print(people)
 
-''' Think of at least five places in the world you’d like to visit.
+""" Think of at least five places in the world you’d like to visit.
 
 Store the locations in a list. Make sure the list is not in alphabetical order.
 Print your list in its original order. Don’t worry about printing the list neatly, just print it as a raw Python list.
@@ -105,7 +105,7 @@ Use reverse() to change the order of your list again. Print the list to show it�
 Use sort() to change your list so it’s stored in alphabetical order. Print the list to show that its order has been changed.
 Use sort() to change your list so it’s stored in reverse alphabetical order. Print the list to show that its order has changed. 
 
-'''
+"""
 
 locations = ['switzerland', 'colombia', 'canada', 'italy', 'spain']
 print(locations)
@@ -125,13 +125,13 @@ print(locations)
 # Use length to indicate the number of places you'd like to visit
 print(len(locations))
 
-'''
+"""
 Think of at least three kinds of your favorite pizza. Store these pizza names in a list, and then use a for loop to print the name of each pizza.
 
 Modify your for loop to print a sentence using the name of the pizza instead of printing just the name of the pizza. For each pizza you should have one line of output containing a simple statement like I like pepperoni pizza.
 Add a line at the end of your program, outside the for loop, that states how much you like pizza. The output should consist of three or more lines about the kinds of pizza you like and then an additional sentence, such as I really love pizza!
 
-'''
+"""
 
 pizzas = ['mushroom', 'garlic', 'cheese']
 
@@ -144,13 +144,13 @@ for pizza in pizzas:
     print(f"I like {pizza} pizza!")
 print("\nCan't you tell that I really love pizza?!")
 
-'''
+"""
 Think of at least three kinds of your favorite animals. Store these animals names in a list, and then use a for loop to print the name of each animal.
 
 Modify your for loop to print a sentence using the name of the animal instead of printing just the name of the animal. For each animal you should have one line of output containing a simple statement.
 Add a line at the end of your program with a statement about the animals.
 
-'''
+"""
 
 animals = ['bear', 'mountain lion', 'mooose']
 
@@ -194,3 +194,34 @@ print(cubes)
 cubes = [number**3 for number in range(1,11)]
 print(cubes)
 
+# Slicing a list
+medical_professionals = ['md', 'rn', 'do', 'pa', 'dpt']
+print (f"The first three professionals in the list are {medical_professionals[:3]}")
+print (f"Three items from the middle of the list are: {medical_professionals[1:-1]}")
+print(f"The last three items in the list are: {medical_professionals[-3:]}")
+
+""" Copying a list 
+
+Make a copy of the list of pizzas, and call it friend_pizzas. Then, do the following:
+
+Add a new pizza to the original list.
+Add a different pizza to the list friend_pizzas.
+Prove that you have two separate lists. Print the message, My favorite pizzas are:, and then use a for loop to print the first list. Print the message, My friend’s favorite pizzas are:, and then use a for loop to print the second list. Make sure each new pizza is stored in the appropriate list.
+
+"""
+
+pizzas = ["mushroom", "garlic", "cheese"]
+
+friend_pizzas = pizzas[:]
+
+pizzas.append("onion")
+
+friend_pizzas.append("anchovy")
+
+print(f"My favorite pizzas are:")
+for pizza in pizzas:
+    print(pizza.title())
+
+print("My friend's favorite pizzas are:")
+for friend_pizza in friend_pizzas:
+    print(friend_pizza.title())
